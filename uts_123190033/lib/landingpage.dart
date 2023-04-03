@@ -57,15 +57,15 @@ class LandingPage extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-      onPressed: () {
-        Navigator.of(context).pushAndRemoveUntil(
-          MaterialPageRoute(
-            builder: (context) => LoginPage(),
-            ), 
-          (Route<dynamic> route) => false);
-      },
-        child: Icon(Icons.logout_rounded),
-        backgroundColor: Color.fromRGBO(0, 51, 153, 1),
+        onPressed: () {
+          Navigator.of(context).pushAndRemoveUntil(
+            MaterialPageRoute(
+              builder: (context) => LoginPage(),
+              ), 
+            (Route<dynamic> route) => false);
+        },
+          child: Icon(Icons.logout_rounded),
+          backgroundColor: Color.fromRGBO(0, 51, 153, 1),
       )
     );
   }

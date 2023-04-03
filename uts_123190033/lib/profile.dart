@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:uts_123190033/detail.dart';
+import 'package:uts_123190033/login.dart';
 
 class ProfilePage extends StatelessWidget {
 
@@ -67,6 +68,17 @@ class ProfilePage extends StatelessWidget {
             ),
           ),
         ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).pushAndRemoveUntil(
+            MaterialPageRoute(
+              builder: (context) => LoginPage(),
+              ), 
+            (Route<dynamic> route) => false);
+        },
+          child: Icon(Icons.logout_rounded),
+          backgroundColor: Color.fromRGBO(0, 51, 153, 1),
+      )
       );
   }
 }

@@ -69,23 +69,23 @@ class _LoginPageState extends State<LoginPage> {
                   SizedBox(height: 20),
                   ElevatedButton(
                     onPressed: () {
-                String text = "";
-                if (user == '123190033' && pass == 'hakim') {
-                  setState(() {
-                    text = 'Login Success';
-                    isLoginSuccess = true;
-                  });
-                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                    return LandingPage();
-                  }));
-                } else {
-                  setState(() {
-                    text = 'Login Failed';
-                    isLoginSuccess = false;
-                  });
-                }
-                SnackBar snackBar = SnackBar(content: Text(text));
-                ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                      String text = "";
+                      if (user == '123190033' && pass == 'hakim') {
+                        setState(() {
+                          text = 'Login Success';
+                          isLoginSuccess = true;
+                        });
+                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                          return LandingPage();
+                        }));
+                      } else {
+                        setState(() {
+                          text = 'Login Failed';
+                          isLoginSuccess = false;
+                        });
+                      }
+                      SnackBar snackBar = SnackBar(content: Text(text));
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
                     },
                     child: Text('Login'),
                   ),
