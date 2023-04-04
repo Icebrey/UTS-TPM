@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uts_123190033/detail.dart';
 import 'package:uts_123190033/kalender.dart';
+import 'package:uts_123190033/kalenderbagus.dart';
 import 'package:uts_123190033/landingpage.dart';
 import 'package:uts_123190033/login.dart';
 import 'package:uts_123190033/tabung.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.amber,
       ),
-      home:  KalenderPage(),
+      home:  kalenderPage(),
     );
   }
 }

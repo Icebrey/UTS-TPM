@@ -35,7 +35,7 @@ class LandingPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => KalenderPage(),
+                    builder: (context) => kalenderPage(),
                   ),
                 );
               },
