@@ -9,7 +9,7 @@ class BangunDatarPage extends StatelessWidget {
     return Scaffold(
   
       appBar: AppBar(
-        title: Text('Trapesium'),
+        title: Text('Bangun Datar'),
       ),
       body: Center(
         child: Column(
@@ -24,7 +24,7 @@ class BangunDatarPage extends StatelessWidget {
                   ),
                 );
               },
-              child: Text('Tabung'),
+              child: Text('Trapesium'),
             ),
             SizedBox(height: 20),
             ElevatedButton(
@@ -36,7 +36,7 @@ class BangunDatarPage extends StatelessWidget {
                   ),
                 );
               },
-              child: Text('Bangun datar'),
+              child: Text('Tabung'),
             ),
           ],
         ),
